@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3, 
+    "name": "My First Extension",
+    "description": "The first extension that I made.",
+    "version": "1.0", 
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Click me!"
+    }, 
+    "options_page": "options.html", 
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"]
+        }
+    ]
+}

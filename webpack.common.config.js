@@ -34,6 +34,14 @@ module.exports = {
         new CleanWebpackPlugin({
             cleanStaleWebpackAssets: false
         }),
+        new copyPlugin({
+            patterns: [
+                { 
+                    from: path.resolve('src/static'), 
+                    to: path.resolve('dist')
+                }
+            ]
+        }),
         ...getHtmlPlugins(['popup', 'options'])
     ],
     resolve: {

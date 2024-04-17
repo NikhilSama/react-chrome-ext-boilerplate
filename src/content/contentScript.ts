@@ -1,5 +1,5 @@
-console.log('content script loaded')
+console.log('content script Loaded and sending message to Popup script')
 
-chrome.runtime.sendMessage("From the content script", (response) => {
-    console.log(response)
-})
+chrome.runtime.sendMessage({
+    html: document.documentElement.innerHTML
+});

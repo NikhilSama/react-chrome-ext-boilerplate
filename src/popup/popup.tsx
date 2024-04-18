@@ -8,7 +8,7 @@ import { Body } from './components/body';
 const App: React.FC = () => {
     return (
         <div>
-            <Header AppName="Summarizer" />
+            <Header AppName="Page Summarizer" />
             <Body />
         </div>
     );

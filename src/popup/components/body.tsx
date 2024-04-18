@@ -135,7 +135,7 @@ export const Body : React.FC<{}> = ({  }) => {
             headline: string;
             bullets: string[];
         }
-        const chain = new RemoteRunnable({ url: 'http://127.0.0.1:8000/summarize'});
+        const chain = new RemoteRunnable({ url: 'http://langserve.turgon.ai/summarize'});
         try {
             chain.invoke({ 
                 // format_instructions: parser.getFormatInstructions(), 
